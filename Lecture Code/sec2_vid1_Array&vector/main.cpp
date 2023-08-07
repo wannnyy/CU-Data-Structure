@@ -38,6 +38,6 @@ int main()
         cout << b[i] << " " ;
     }
     cout << endl ;
-
+    //end
     return 0;
 }
