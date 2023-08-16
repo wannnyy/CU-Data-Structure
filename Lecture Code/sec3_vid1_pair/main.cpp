@@ -50,5 +50,7 @@ int main()
     std::pair<int*,std::pair<int,bool>> p5 = {a,{1,true}} ;
 
 
+
+    /* THE SEC3 VID2 is just about template and namespace*/
     return 0;
 }
