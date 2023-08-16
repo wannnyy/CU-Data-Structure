@@ -61,5 +61,4 @@ int main() {
     for (auto &x : p1) { x.replace(0,4,"--"); }
     for (auto &x : p1) { cout << x << " ";}
     cout << endl;
-
 }
