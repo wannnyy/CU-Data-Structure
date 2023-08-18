@@ -4,9 +4,9 @@ using namespace std;
 void reverse(vector<int> &v,vector<int>::iterator a,vector<int>::iterator b)
 {
     //write your code only in this function
-    b--;
-    int bound = (b-a)/2 ;
-    for(int i=0;i<=bound;i++)
+    b--; // <------- be careful you were wrong here, Just think more next time it is already 2.26 am .
+    int bound = (b-a)/2 +1;
+    for(int i=0;i<bound;i++)
         {
             swap(*(a+i),*(b-i));
         }
