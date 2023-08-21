@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1692586159 source:c:\users\tonwa\onedrive\documents\data_structures_cu\lecture code\vectorintersection\main.cpp
+	<iostream>
+	<vector>
+	<algorithm>
+	<map>
+

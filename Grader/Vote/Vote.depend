@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1692590347 source:c:\users\tonwa\onedrive\documents\data_structures_cu\grader\vote\main.cpp
+	<iostream>
+	<map>
+	<vector>
+	<algorithm>
+	<string>
+

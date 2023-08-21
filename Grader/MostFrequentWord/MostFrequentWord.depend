@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1692542409 source:c:\users\tonwa\onedrive\documents\data_structures_cu\lecture code\mostfrequentword\main.cpp
+	<iostream>
+	<map>
+	<string>
+

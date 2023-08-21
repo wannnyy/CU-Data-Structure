@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1692615591 source:c:\users\tonwa\onedrive\documents\data_structures_cu\grader\intervalcount\main.cpp
+	<iostream>
+	<vector>
+	<algorithm>
+

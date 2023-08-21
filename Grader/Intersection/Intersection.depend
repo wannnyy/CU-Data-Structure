@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1692530680 source:c:\users\tonwa\onedrive\documents\data_structures_cu\grader\intersection\main.cpp
+	<iostream>
+	<vector>
+	<algorithm>
+
