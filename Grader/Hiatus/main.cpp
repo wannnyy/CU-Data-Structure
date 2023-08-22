@@ -38,7 +38,6 @@ int main()
         cin >> pyear >> pmonth;
         auto ityr = (upper_bound(st_year.begin(), st_year.end(), pyear) - 1);
         int yr = *(ityr); // year that we will iterate through
-        // cout << "search yr " << yr << '\n';
 
         if (pyear < st_year[0] || (pyear == st_year[0] && pmonth < *(min_element(publish[pyear].begin(), publish[pyear].end()))))
         {
@@ -47,10 +46,6 @@ int main()
         }
         else if (pyear == yr)
         {
-            // if(find(publish[pyear].begin(), publish[pyear].end(), pmonth) != publish[pyear].end())
-            // {
-            //     cout << 0 << " " << 0 << " ";
-            // }
             sort(publish[yr].begin(), publish[yr].end(), greater<>());
             for (auto i : publish[yr])
             {
@@ -72,8 +67,6 @@ int main()
                 yr = *(ityr - 1);
                 cout << yr << " " << *(max_element(publish[yr].begin(), publish[yr].end())) << " ";
             }
-
-            // else and we have to decrease yr by 1 index
         }
         else
         {
@@ -81,6 +74,5 @@ int main()
             cout << yr << " " << *(max_element(publish[yr].begin(), publish[yr].end())) << " ";
         }
     }
-
     return 0;
 }

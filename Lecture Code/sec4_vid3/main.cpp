@@ -34,7 +34,7 @@ int main()
         {"z",0}, {"z", -1}, {"z",9}
     };
 
-    for(auto &x:s1)
+    for(auto x:s1)
     {
         cout << x.first << ", " << x.second << '\n' ;
     }
