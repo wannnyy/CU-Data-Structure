@@ -31,7 +31,7 @@ int main()
         auto up = upper_bound(number.begin(),number.end(),mx);
         cout << up - low << " ";
     }
-
+    
     return 0;
 }
 
