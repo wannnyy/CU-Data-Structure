@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
+#include <map>
 
 using namespace std;
 
@@ -10,20 +11,22 @@ int main()
     std::cin.tie(0);
     int n, m;
     cin >> n >> m;
-    vector<int> to;
+    // vector<int> to;
+    map<int, int> too;
     for (int i = 0; i < n; i++)
     {
         int temp;
         cin >> temp;
-        to.push_back(temp);
+        // to.push_back(temp);
+        too[temp] += 1;
     }
-    sort(to.begin(), to.end());
+    // sort(to.begin(), to.end());
     // for(auto i :to)
     // {
     //     cout << i << " ";
     // }
     // cout << '\n';
-
+    bool iswin = true;
     int cnt = 0;
     int ncd;
     int c1;
@@ -33,20 +36,37 @@ int main()
         for (int j = 0; j < ncd; j++)
         {
             cin >> c1;
-            auto it = upper_bound(to.begin(), to.end(), c1);
-            if (it == to.end() && *it > c1) 
+            // auto it = upper_bound(to.begin(), to.end(), c1);
+            auto it2 = too.upper_bound(c1);
+            if (it2->second <= 0 || it2->first < c1)
             {
-                cout << i + 1;
-                return 0;
+                if (iswin)
+                {
+                    cnt = i;
+                }
+                iswin = false;
             }
             else
-            { 
-                to.erase(it);
-                cnt = i;
+            {
+                if (iswin)
+                {
+                    it2->second -= 1;
+                    if(it2->second == 0)
+                    {
+                        too.erase(it2);
+                    }
+                    cnt = i;
+                }
             }
         }
     }
-    cout << cnt + 2;
+    if (iswin)
+    {
+        // cout << "W" ;
+        cout << cnt + 2;
+    }
+    else
+        cout << cnt + 1;
 
     return 0;
 }
