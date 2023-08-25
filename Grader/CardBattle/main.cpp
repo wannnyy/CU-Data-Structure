@@ -51,7 +51,7 @@ int main()
                 if (iswin)
                 {
                     it2->second -= 1;
-                    if(it2->second == 0)
+                    if (it2->second == 0)
                     {
                         too.erase(it2);
                     }
