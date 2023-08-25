@@ -6,19 +6,34 @@ using namespace std;
 void list_erase(vector<int> &v, vector<int> &pos)
 {
     // write your code here
-    set<int> tp ; 
+    // set<int> tp ; 
+    // for(auto e : pos)
+    // {
+    //     tp.insert(e);
+    // }
+    // vector<int> ans ;
+    // for(int i=0;i<v.size();i++)
+    // {
+    //     if(tp.find(i) == tp.end())
+    //     {
+    //         ans.push_back(v[i]);
+    //     }
+    // }
+    // v = ans ;
+    vector<int> ans; 
     for(auto e : pos)
     {
-        tp.insert(e);
+        v[e] = -1 ;
     }
-    vector<int> ans ;
-    for(int i=0;i<v.size();i++)
+    
+    for(auto e : v)
     {
-        if(tp.find(i) == tp.end())
+        if(e != -1)
         {
-            ans.push_back(v[i]);
+            ans.push_back(e);
         }
     }
+
     v = ans ;
 }
 int main()
