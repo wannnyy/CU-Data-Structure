@@ -12,5 +12,9 @@ int main()
     cout << m.erase(3);
     k["somchai"] = 4;
     cout << k.erase("somchai");
+
+
+
+    cout << char(97);
     return 0 ;
 }
