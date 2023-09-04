@@ -20,20 +20,23 @@ int main()
         db.insert(tp);
     }
     sort(check.begin(),check.end());
-    auto bg = lower_bound(check.begin(),check.end(),1);
+
+    // Check whether 1, n exit in the given range.
+    auto bg = lower_bound(check.begin(),check.end(),1); 
     auto ls = upper_bound(check.begin(),check.end(),n);
     
 
     //  cout << *(ls) << " " << *(check.end());
+    //  check.end() is next to the last element.
     if(db.size() != check.size())
     {
         cout << "NO";
     }
-    else if(bg != check.begin() || ls < check.end())
+    else if(bg != check.begin() || ls < check.end()) 
     {
         cout << "NO";
     }
-    else
+else
     {
         cout << "YES" ;
     }

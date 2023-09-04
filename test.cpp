@@ -15,6 +15,6 @@ int main()
 
 
 
-    cout << char(97);
+    cout << '\n'<<  'a' + 3;
     return 0 ;
 }

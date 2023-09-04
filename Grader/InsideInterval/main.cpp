@@ -115,11 +115,12 @@ int main()
     for (int i = 0; i < m; i++)
     {
         int it = *(upper_bound(start.begin(), start.end(), prob[i]) - 1);
+        // If we use lower bound it might occur that prob > *it so we can fix that by use upper_bound and *(it-1)
         if (it <= prob[i] && prob[i] <= range[it])
         {
             cout << 1 << " ";
         }
-        else 
+        else
         {
             cout << 0 << " ";
         }
