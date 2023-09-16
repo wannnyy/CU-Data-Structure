@@ -1,0 +1,2 @@
+if(it != aux.begin())
+  

@@ -76,5 +76,12 @@ int main()
         c.pop();
     }
 
+    vector<vector<int>> g = {{1}};
+    cout << *(g[0].begin());
+
+    
+
+
+
     return 0;
 }
