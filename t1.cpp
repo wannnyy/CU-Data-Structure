@@ -11,7 +11,7 @@ int main()
         it->second.second.first;
     }                       // kinda work!
 
-
+    map<pair<string,string>,int[3]>  k ;
 
 
 
