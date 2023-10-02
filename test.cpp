@@ -17,6 +17,12 @@ int main()
     m[3] = 4;
     m[4] = 5;
 
+    for(auto x : m)
+    {
+        cout << x.first <<   " ";
+    }
+    cout << '\n';
+
     auto it = m.begin();
     int cnt = 0;
     while (it != m.end())
