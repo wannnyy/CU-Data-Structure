@@ -9,7 +9,7 @@ bool CP::vector<T>::block_swap(iterator a, iterator b, size_t m)
   vector<T> ta(m), tb(m);
   auto ft = std::min(a, b);
   auto ls = std::max(a, b);
-  if (m <= 0 || ft + m > ls || b + m >= end() || ft < begin() || ls >= end()) // Check this condition carefully.
+  if (m <= 0 || ft + m > ls || b + m >= end() || ft < begin() || ls >= end()) // Check the last condition carefully.
   {
     return false;
   }

@@ -22,8 +22,7 @@ void CP::vector<T>::insert_many(CP::vector<std::pair<int, T>> data)
     else
     {
       if (i < mSize)
-        ;
-      ans.push_back(mData[i]);
+        ans.push_back(mData[i]);
     }
   }
   resize(ans.size());
