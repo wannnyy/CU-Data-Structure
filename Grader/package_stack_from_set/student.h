@@ -8,7 +8,7 @@ template <typename T>
 CP::stack<T>::stack(typename std::set<T>::iterator first, typename std::set<T>::iterator last)
 {
   // write your code ONLY here
-  // int sz = last - first;
+  // int sz = last - first; //you can't do this.
   // expand(sz);
   // last--;
   // for (auto it = last; it >= first; it--)

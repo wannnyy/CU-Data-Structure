@@ -6,8 +6,9 @@ template <typename T>
 void CP::stack<T>::moveInsert(int k, CP::stack<T> &s2, int m)
 {
   // your code here
-  if(s2.size() == 0) return 
-  if(m >s2.size())
+  if (s2.size() == 0)
+    return;
+  if (m > s2.size())
     m = s2.size();
   std::vector<T> temp(m), clone(mSize);
   for (int i = 0; i < m; i++)
