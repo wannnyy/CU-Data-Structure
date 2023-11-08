@@ -1,4 +1,3 @@
-#include <algorithm>
 #include <random>
 #include <chrono>
 #include <cassert>
@@ -78,7 +77,7 @@ int main()
   //   case 4: test_random<int>(); break;
   //   case 5: test_random<int,std::greater<int>>(); break;
   // }
-
+  
   int n = 10;
   CP::priority_queue<int> pq;
   while (n--)
